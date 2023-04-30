@@ -64,7 +64,7 @@ li {
 	display: grid;
 }
 
-.tab.--beverages {
+.tab--beverages {
 	display: none;
 }
 
