@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Máté Gombkötő" />
+		<meta name="description" content="Grill & Pancake Bar, Budapest, Hungary" />
+		<title>Grill &amp; Pancake Bar Budapest</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calligraffitti" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paprika" />
+		<link rel="stylesheet" href="w3.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<nav class="w3-top">
+			<div class="w3-bar w3-black w3-card w3-content w3-left-align">
+				<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-hover-white w3-right" href="javascript:void(0);" onclick="clickOnMenu()">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a class="w3-bar-item w3-button w3-hover-white" href="#" onclick="closeMenu()"> <i class="fas fa-utensils"></i> Home </a>
+				<a class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" href="#contact"> <i class="fas fa-envelope"></i> Contact </a>
+				<a class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" href="#location"> <i class="fas fa-map-marked-alt"></i> Location </a>
+				<a class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" href="#menu"> <i class="fas fa-drumstick-bite"></i> Menu </a>
+				<a class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" href="#about"> <i class="fas fa-smile"></i> About </a>
+			</div>
+			<div class="w3-black w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="js-navbar">
+				<a class="w3-bar-item w3-button w3-hover-white" href="#about" onclick="closeMenu()"> <i class="fas fa-smile"></i> About </a>
+				<a class="w3-bar-item w3-button w3-hover-white" href="#menu" onclick="closeMenu()"> <i class="fas fa-drumstick-bite"></i> Menu </a>
+				<a class="w3-bar-item w3-button w3-hover-white" href="#location" onclick="closeMenu()"> <i class="fas fa-map-marked-alt"></i> Location </a>
+				<a class="w3-bar-item w3-button w3-hover-white" href="#contact" onclick="closeMenu()"> <i class="fas fa-envelope"></i> Contact </a>
+			</div>
+		</nav>
+
+		<header class="header w3-display-container w3-grayscale-min" id="home">
+			<div class="header-banner w3-display-middle w3-animate-opacity w3-black w3-center w3-opacity-min w3-padding-large w3-round w3-wide w3-xxlarge">
+				<span>Grill &amp; Pancake</span>
+				<br />
+				<span>Bar</span>
+			</div>
+		</header>
+
+		<main class="main">
+			<hr class="separator" />
+			<section class="w3-container w3-content w3-light-gray w3-padding-64" id="about">
+				<div class="l6 w3-col w3-padding-large">
+					<h2 class="w3-center">About</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis. Enim nunc faucibus a pellentesque sit amet.</p>
+					<p>Nulla pharetra diam sit amet nisl. Tempus iaculis urna id volutpat. Volutpat est velit egestas dui id ornare arcu odio ut. Felis imperdiet proin fermentum leo vel. In massa tempor nec feugiat nisl pretium fusce. Nisl vel pretium lectus quam.</p>
+					<div class="w3-panel w3-sand w3-leftbar">
+						<p>
+							<i class="fa fa-quote-right w3-xxlarge w3-opacity"></i>
+							<br />
+							<i class="w3-serif w3-large"> Masterfully prepared dishes in generous portions. The great atmosphere is just the cherry on top. </i>
+						</p>
+						<p>— John Doe, food blogger</p>
+					</div>
+					<p class="opening w3-center w3-large">
+						Opening times: <br />
+						Monday-Saturday 10:00-22:00 <br />
+						Sunday 11:00-19:00
+					</p>
+				</div>
+				<div class="l6 w3-col w3-hide-medium w3-hide-small w3-padding-large">
+					<img class="picture framegap w3-border w3-grayscale-min w3-image" src="img/about.jpg" alt="" />
+				</div>
+			</section>
+			<hr class="separator w3-content" />
+			<section id="menu" class="w3-container w3-content w3-light-gray w3-padding-64">
+				<div class="l6 w3-col w3-hide-medium w3-hide-small w3-padding-large">
+					<img class="picture framegap w3-border w3-grayscale-min w3-image" src="img/menu.jpg" alt="" />
+				</div>
+				<div class="l6 w3-col w3-padding-large">
+					<h2 class="w3-center">Menu</h2>
+					<div class="w3-container">
+						<div class="w3-center w3-row">
+							<a href="javascript:void(0)" onclick="openTab(event, 'dishes');">
+								<div class="tablink w3-border-indigo w3-bottombar w3-half w3-hover-light-gray w3-padding js-tablink">Dishes</div>
+							</a>
+							<a href="javascript:void(0)" onclick="openTab(event, 'beverages');">
+								<div class="tablink w3-bottombar w3-half w3-hover-light-gray w3-padding js-tablink">Beverages</div>
+							</a>
+						</div>
+						<div class="tab w3-border w3-container w3-sand js-tab" id="js-dishes">
+							<p class="tab-category">Soups:</p>
+							<ul>
+								<li>Goulash soup</li>
+								<li>Fisherman's soup</li>
+							</ul>
+							<p class="tab-category">Main Dishes:</p>
+							<ul>
+								<li>Grilled beef steak</li>
+								<li>Cabbage rolls</li>
+								<li>Chicken paprikash</li>
+								<li>Goulash</li>
+							</ul>
+							<p class="tab-category">Desserts:</p>
+							<ul>
+								<li>Dobos torte</li>
+								<li>Gundel crêpe</li>
+								<li>Knedle</li>
+							</ul>
+						</div>
+						<div class="tab --beverages w3-border w3-container w3-sand js-tab" id="js-beverages">
+							<p class="tab-category">Non-Alcoholic Beverages:</p>
+							<ul>
+								<li>Coke</li>
+								<li>Diet Coke</li>
+								<li>Dr Pepper</li>
+								<li>Fanta</li>
+								<li>Mineral water</li>
+								<li>Schweppes</li>
+								<li>Sprite</li>
+							</ul>
+							<p class="tab-category">Alcoholic Beverages:</p>
+							<ul>
+								<li>Arany Ászok</li>
+								<li>Borsodi</li>
+								<li>Egri bikavér</li>
+								<li>Soproni</li>
+								<li>Tokaji aszú</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr class="separator w3-content" />
+			<section class="w3-container w3-content w3-light-gray w3-padding-64" id="location">
+				<div class="l6 w3-center w3-col w3-padding-large">
+					<h2>Location</h2>
+					<p>You can find us at: 1234 Budapest, Kovács utca 15. (next to the college campus)</p>
+					<iframe class="map framegap w3-border" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d172572.0975884614!2d18.99022101179795!3d47.48136018792857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shu!4v1563281716659!5m2!1sen!2shu" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="l6 w3-col w3-padding-large w3-hide-medium w3-hide-small">
+					<img class="picture framegap w3-border w3-grayscale-min w3-image" src="img/location.jpg" alt="" />
+				</div>
+			</section>
+			<section class="contact w3-center w3-container w3-content w3-padding-64" id="contact">
+				<div class="w3-black w3-opacity-min w3-padding w3-round">
+					<h2>Contact &amp; Reservation</h2>
+					<p><i class="fas fa-phone"></i> Phone: +123 456 789</p>
+					<p><i class="fas fa-envelope"></i> Email: info@joizetterem.hu</p>
+					<p>You can also reserve a table or tell us what you think through the form below.</p>
+				</div>
+				<form action="reserve.php" target="_blank">
+					<p>
+						<input class="w3-border w3-input w3-padding-8 w3-round" type="text" placeholder="Name" required name="Name" />
+					</p>
+					<p>
+						<input class="w3-border w3-input w3-padding-8 w3-round" type="number" placeholder="For how many people" required name="People" />
+					</p>
+					<p>
+						<input class="w3-border w3-input w3-padding-8 w3-round" type="datetime-local" placeholder="Date and time" required name="Date" value="2019-08-15T20:00" />
+					</p>
+					<p>
+						<input class="w3-border w3-input w3-padding-8 w3-round" type="text" placeholder="Your message / Additional information" required name="Message" />
+					</p>
+					<p>
+						<button class="w3-button w3-indigo w3-round" type="submit">SEND IT <i class="fas fa-paper-plane"></i></button>
+					</p>
+				</form>
+			</section>
+		</main>
+
+		<footer class="w3-bar w3-black">
+			<p class="w3-center">&copy; 2019 Grill &amp; Pancake Bar, All rights reserved.</p>
+		</footer>
+
+		<script src="https://kit.fontawesome.com/cc51fa6ee0.js" crossorigin="anonymous"></script>
+		<script src="scripts.js"></script>
+	</body>
+</html>

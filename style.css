@@ -1,0 +1,95 @@
+html {
+	--foggy: rgba(255, 255, 255, 0.175);
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	height: 100vh;
+	line-height: 1.8;
+}
+
+li {
+	list-style-type: none;
+}
+
+.separator {
+	background-color: black;
+	border: none;
+	height: 0.06rem;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.header,
+.main {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header {
+	background-image: linear-gradient(var(--foggy), var(--foggy)), url("img/home.jpg");
+	height: 66.6%;
+}
+
+.main {
+	background-image: linear-gradient(var(--foggy), var(--foggy)), url("img/contact.jpg");
+}
+
+.header-banner {
+	font-family: "Calligraffitti", cursive;
+	white-space: nowrap;
+}
+
+.opening {
+	font-weight: bold;
+}
+
+.framegap {
+	padding: 0.2rem;
+}
+
+.tab {
+	font-family: "Paprika", cursive;
+	justify-content: center;
+}
+
+.tab-category {
+	text-decoration: underline;
+}
+
+.tab {
+	display: grid;
+}
+
+.tab.--beverages {
+	display: none;
+}
+
+.map {
+	height: 486px;
+	width: 100%;
+}
+
+.contact {
+	max-width: 640px;
+}
+
+/* smartphones and phablets */
+@media (max-width: 768px) {
+	.header,
+	.main {
+		background-attachment: scroll;
+	}
+
+	.header {
+		height: 100%;
+	}
+
+	.main {
+		background-position: bottom;
+		background-size: auto 896px;
+	}
+}
